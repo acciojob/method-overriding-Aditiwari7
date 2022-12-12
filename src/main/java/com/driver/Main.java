@@ -1,6 +1,6 @@
 package com.driver;
 
-class A{
+ class A{
     String meth(){
         return "Invoking method from class A";
     }
@@ -13,7 +13,9 @@ class B extends A{
 }
 public class Main {
   public static void main(String[] args){
+      A obj1 = new A();
+      obj1.meth();
       B obj = new B();
-      System.out.println(obj.meth());
+      obj.meth();
   }
 }
